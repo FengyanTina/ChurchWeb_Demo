@@ -1,0 +1,41 @@
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-blue);
+    color: var(--white);
+    min-height: 70vh;
+    padding: 20px;
+  overflow: hidden;
+  
+  }
+  
+
+  
+  .intro-p {
+    max-width: 85vw;
+    --white: #ffffff;
+    margin-top: 20px;
+    display: -webkit-box;               /* This makes it a flexbox-like element */
+  -webkit-box-orient: vertical;       /* Forces the box to stack vertically */
+  -webkit-line-clamp: 9;              /* Limit to 9 lines */
+  overflow: hidden;                   /* Hide the overflow text */
+  text-overflow: ellipsis;  
+  }
+  
+  @media screen and (min-width: 699px) {
+    .intro-container {
+      justify-content: start;
+      align-items: flex-start;
+      text-align: left;
+      padding: 10%;
+      height: 65vh;
+    }
+  
+    .intro-p {
+      max-width: 750px;
+    }
+  }
+  

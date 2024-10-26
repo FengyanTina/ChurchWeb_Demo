@@ -1,0 +1,68 @@
+Default styling for prev, next, and today buttons
+
+  /* Custom size for prev/next icons */
+  
+  .fc-toolbar {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  /* Style for the title row */
+
+
+
+/* Target FullCalendar navigation buttons */
+.fc-toolbar button.fc-button {
+  background-color: transparent !important; /* Remove background color */
+  color: #007bff !important; /* Set default text/icon color for all buttons */
+  border: none !important; /* Remove border */
+  padding: 5px 10px !important; /* Adjust padding */
+  font-size: 20px !important; /* Adjust button text/icon size */
+  box-shadow: none !important; /* Remove any button shadow */
+}
+  /* On small screens, reduce the button size */
+  @media only screen and (max-width: 768px) {
+    .fc-button {
+      padding: 3px 6px ;        /* Reduce padding for smaller screens */
+      font-size: 15px !important;         /* Smaller font size for small screens */
+    }
+ 
+  
+    .fc-prev-button, .fc-next-button {
+      font-size: 14px !important;         /* Smaller prev/next icon size for small screens */
+    }
+    .fc-toolbar {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;    /* Center items horizontally */
+      }
+  }
+
+  @media (min-width: 768px) {
+    .calendar-container {
+      padding: 20px !important; /* Optional padding */
+    }    
+  }
+  
+  /* Adjust styles for very small screens */
+  @media (max-width: 767px) {
+    .calendar-container {
+      padding: 10px !important; /* Smaller padding */
+    }
+    .fc-toolbar-title {
+        font-size: 20px !important; /* Regular size for larger screens */
+      }
+  }
+  .calendar-container {
+    width: 100%; /* Make the container full width */
+    max-width: 1200px; /* Optional: Set a max width if needed */
+    margin: 0 auto; /* Center the calendar */
+  }
+  
+  .fc {
+    width: 100% !important; /* Ensure FullCalendar takes full width */
+    height: auto; /* Adjust height if needed */
+  }
+  .fc-toolbar-title {
+    font-size: 30px !important; /* Regular size for larger screens */
+  }

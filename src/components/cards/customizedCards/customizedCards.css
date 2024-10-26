@@ -1,0 +1,96 @@
+.image-responsive {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px;
+    object-fit: cover; /* Cover to maintain aspect ratio without distortion */
+    display: block; /* Prevents extra space below image */
+}
+
+
+@media (max-width: 700px) {
+    .image-responsive {
+        max-height: 300px; /* Keep the same max height even below 900px */
+        height: auto;
+    }
+   
+}
+@media (mmin-width: 701px)and (max-width: 1200px) {
+    .image-responsive {
+        max-height: 350px; /* Keep the same max height even below 900px */
+        height: auto;
+       
+    }
+    
+}
+@media (min-width: 1300px) {
+    .image-responsive {
+      max-height: 400px; /* Different height for very large screens */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+.image-gallery-custom {
+    display: grid; /* Use CSS grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* Default to three columns */
+    gap: 8px; /* Space between images */
+    width: 100%;
+    height: 600px; /* Fixed height for the container */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .image-gallery-custom img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover to fill the space */
+  }
+  
+  /* Larger image class */
+  .image-large {
+    grid-column: span 2; /* Make the larger image take up two columns */
+    grid-row: span 2; /* Make the larger image take up two rows */
+  }
+  @media (max-width: 600px) {
+    .image-gallery-custom {
+      grid-template-columns: 1fr; /* Single column on small screens */
+      overflow-y: auto;
+      overflow-x: auto;
+      max-height: 300px;
+    
+    }
+    
+  }
+  @media (min-width:601px) and (max-width: 800px) {
+    .image-gallery-custom {
+      grid-template-columns: 1fr; /* Single column on small screens */
+      overflow-y: auto;
+      overflow-x: auto;
+      max-height: 600px;
+    
+    }
+  }
+  
+  @media (min-width:801px) and (max-width: 1300px) {
+    .image-gallery-custom {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+      overflow-y: auto;
+      overflow-x: auto;
+      max-height: 650px;
+    }
+  }
+  ol {
+    margin-left: 10px; /* Adjust padding as needed */
+}
+
+ol li::marker {
+    font-size: 1.5em; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: make it bold */
+}
+@media (max-width: 600px) {
+    ol li {
+        font-size: 1em; /* Smaller font size for small screens */
+    }
+    
+    ol li::marker {
+        font-size: 1em; /* Adjust marker size if needed */
+        font-weight: bold; /* Optional: make it bold */
+    }
+}

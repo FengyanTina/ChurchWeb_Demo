@@ -1,0 +1,180 @@
+/* * {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+  } */
+  
+  /* .slider-container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  .slider {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .slide {
+    width: 40rem;
+    height: 18rem;
+    background-color: gray;
+    display: none;
+    font-size: 1.6rem;
+  }
+  
+  .active {
+    display: grid;
+    place-items: center;
+  }
+  
+  .slider button {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  
+  .lowerSlider {
+    width: 40rem;
+    margin: 1rem auto;
+    overflow-x: auto;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .lowerSlider p {
+    min-width: 7rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+  }
+  
+  .lowerActive {
+    background-color: rgb(216, 216, 216);
+  }
+  
+  .lowerItem {
+    background-color: rgb(162, 162, 162);
+  }
+  
+  /* slick slider  */
+  .slick-container {
+    width:70%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+  }
+   
+  .slick-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .image-container{
+    width: 100%;
+    height: 100%;
+   
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .slide{
+    position :relative;
+    height: 300px;
+    cursor: pointer;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    -webkit-text-stroke:1px ;
+    -webkit-text-stroke-color: black;
+    font-weight: 800;
+  
+  }
+  .text-overlay h2{
+    width: 100%; /* Ensure the h2 takes full width of its container */
+    font-size: 3em;
+    margin: 0;
+    white-space: nowrap; /* Prevent the text from breaking into a new line */
+    overflow: hidden; /* Hide any overflowed text */
+    text-overflow: ellipsis;
+    
+  }
+  .text-overlay p{
+    font-size: 1.5em;
+    width: "100%";   
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  .slick-slider .slick-list,
+  .slick-slider .slick-track {
+    display: flex;
+    gap: 0.7rem;
+  }
+  .slide:hover .text-overlay {
+    opacity: 1; /* Show overlay text on hover if you want */
+  }
+  .slick-dots {
+    width: fit-content !important;
+    display: flex !important;
+    gap: 0.5rem !important;
+  }
+  
+  .slick-dots li button:before {
+    content: "" !important;
+    color: red !important;
+  }
+  
+  .slick-dots li button {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    border-radius: 50px !important;
+    background-color: black !important;
+  }
+  
+  .slick-dots .slick-active button {
+    background-color: red !important;
+  }
+  
+  .slick-arrows {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  } 
+  
+  .slick-arrows button {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  } 
+  
+  /* swwiper slider  */
+  .swiper-slider {
+    width: 100%;
+    margin: 2rem auto;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .swiper-slider .single-slide img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 999px) {
+    .swiper-slider {
+      width: 90%;
+    }
+  }
