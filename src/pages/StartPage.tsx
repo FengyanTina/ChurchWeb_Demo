@@ -42,7 +42,7 @@ const StartPage = () => {
           backgroundAttachment: "fixed",
         }}
       >
-        {/* Link Section */}
+    
         <Grid
           size={{ xs: 12, sm: 8 }}
           sx={{
@@ -51,8 +51,8 @@ const StartPage = () => {
             "& a": {
               position: "relative",
               paddingLeft: "20px", // Space for the vertical line
-              marginBottom: "30px", // Space between the links
-              textDecoration: "none", // No underline
+              marginBottom: "30px", 
+              textDecoration: "none", 
               color: "black",
               fontSize: {
                 xs: "1rem", 
