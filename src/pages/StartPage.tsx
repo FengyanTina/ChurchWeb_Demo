@@ -64,8 +64,8 @@ const StartPage = () => {
               position: "absolute",
               left: 0,
               top: "50%",
-              width: "5px", // Vertical line width
-              height: "100%", // Vertical line height
+              width: "5px", 
+              height: "100%", 
               backgroundColor: "#00acc1", // Line color
               transform: "translateY(-50%)", // Center line vertically
             },
